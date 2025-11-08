@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotEco - The Future of Digital Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* Override background image path */
+        .animated-bg-section::before {
+            background-image: url('DARK BG.svg') !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Glass Morphism Navbar -->
+    <nav class="glass-navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <div class="logo-icon">
+                    <img src="images/logo.png" alt="DotEco Logo">
+                </div>
+                <span>DotEco</span>
+            </a>
+            
+            <div class="navbar-right">
+                <ul class="navbar-menu" id="navbarMenu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#ecosystem">Ecosystem</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-cta">
+                    <a href="#" class="nav-btn nav-btn-outline">Sign In</a>
+                    <a href="#" class="nav-btn nav-btn-primary">Get Started</a>
+                </div>
+                
+                <button class="navbar-toggle" id="navbarToggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Animated Background -->
+    <section class="animated-bg-section" id="home">
+        <!-- Particle Canvas (Left Diagonal) -->
+        <canvas id="particles-canvas"></canvas>
+        
+        <!-- Geometric Canvas (Right Diagonal) -->
+        <canvas id="geometric-canvas"></canvas>
+        
+        <!-- Floating Orbs -->
+        <div class="floating-orb"></div>
+        <div class="floating-orb"></div>
+        <div class="floating-orb"></div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <div class="subtitle">Welcome to the Future</div>
+            <h1 id="main-heading"></h1>
+            <p class="description">
+                Building the next generation of decentralized digital infrastructure. 
+                Join us in creating a sustainable, transparent, and community-driven ecosystem.
+            </p>
+            <p class="tagline">Innovation meets sustainability in the digital age</p>
+            <div class="buttons">
+                <a href="#" class="btn">Explore Ecosystem</a>
+                <a href="#" class="btn">Join Community</a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <div class="arrows">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+            <div class="text">Scroll</div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section" id="vision">
+        <!-- Background Elements -->
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+        <div class="bg-orb bg-orb-4"></div>
+        <div class="grid-lines"></div>
+        <div class="floating-dots" id="floatingDotsVision"></div>
+        
+        <div class="vision-container scroll-animate fade-in">
+            <!-- Vision Content -->
+            <div class="vision-content">
+                <span class="section-label">Our Vision</span>
+                <h2>Transforming Digital Future</h2>
+                <p class="vision-description">
+                    We envision a world where technology empowers communities, 
+                    transparency drives innovation, and sustainability shapes our digital landscape.
+                </p>
+                
+                <div class="vision-highlights">
+                    <div class="vision-highlight-item">
+                        <div class="icon">
+                            <img src="images/decentralized-icon.png" alt="Decentralized" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="content">
+                            <h3>Decentralized Power</h3>
+                            <p>Community-driven governance ensuring fair distribution of resources and decision-making.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="vision-highlight-item">
+                        <div class="icon">
+                            <img src="images/sustainable-icon.png" alt="Sustainable" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="content">
+                            <h3>Sustainable Growth</h3>
+                            <p>Building for the long term with eco-friendly practices and responsible innovation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="vision-highlight-item">
+                        <div class="icon">
+                            <img src="images/transparent-icon.png" alt="Transparent" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="content">
+                            <h3>Full Transparency</h3>
+                            <p>Open-source development with complete visibility into operations and decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vision Visual -->
+            <div class="vision-visual">
+                <div class="vision-circle outer">
+                    <div class="vision-dot"></div>
+                    <div class="vision-dot"></div>
+                    <div class="vision-dot"></div>
+                    <div class="vision-dot"></div>
+                </div>
+                <div class="vision-circle middle"></div>
+                <div class="vision-circle inner">🌍</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Dot Ecosystem Section -->
+    <section class="vision-section" id="ecosystem">
+        <div class="section-header scroll-animate fade-in">
+            <span class="section-badge">The Ecosystem</span>
+            <h2 class="section-title">What is Dot Ecosystem?</h2>
+            <p class="section-description">
+                A comprehensive digital infrastructure built on principles of decentralization, 
+                sustainability, and community empowerment.
+            </p>
+        </div>
+        
+        <!-- 3x3 Ecosystem Grid -->
+        <div class="ecosystem-grid-new scroll-animate card-reveal">
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/blockchain-icon.png" alt="Blockchain">
+                </div>
+                <h4>Blockchain</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/defi-icon.png" alt="DeFi">
+                </div>
+                <h4>DeFi</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/nft-icon.png" alt="NFTs">
+                </div>
+                <h4>NFTs</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/dao-icon.png" alt="DAO">
+                </div>
+                <h4>DAO</h4>
+            </div>
+            
+            <!-- Center Card -->
+            <div class="ecosystem-card-new center-card-new">
+                <div class="card-icon-new large-icon">
+                    <img src="images/doteco-center-icon.png" alt="DotEco">
+                </div>
+                <h4>DOT ECO</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/metaverse-icon.png" alt="Metaverse">
+                </div>
+                <h4>Metaverse</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/ai-icon.png" alt="AI">
+                </div>
+                <h4>AI</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/iot-icon.png" alt="IoT">
+                </div>
+                <h4>IoT</h4>
+            </div>
+            
+            <div class="ecosystem-card-new">
+                <div class="card-icon-new">
+                    <img src="images/cloud-icon.png" alt="Cloud">
+                </div>
+                <h4>Cloud</h4>
+            </div>
+        </div>
+        
+        <!-- Enhanced Features List -->
+        <div class="what-is-features scroll-animate stagger-children">
+            <div class="feature-item">
+                <div class="feature-number">01</div>
+                <div class="feature-content">
+                    <h3>Interconnected Technologies</h3>
+                    <p>Seamlessly integrate blockchain, AI, IoT, and cloud technologies in one unified ecosystem.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-number">02</div>
+                <div class="feature-content">
+                    <h3>Community-Driven Development</h3>
+                    <p>Every member has a voice in shaping the future through decentralized governance.</p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-number">03</div>
+                <div class="feature-content">
+                    <h3>Sustainable & Scalable</h3>
+                    <p>Built with environmental responsibility and long-term growth in mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="vision-section" id="features">
+        <div class="section-header scroll-animate fade-in">
+            <span class="section-badge">Features</span>
+            <h2 class="section-title">Features of Dot Ecosystem</h2>
+            <p class="section-description">
+                Powerful tools and capabilities designed for the next generation of digital innovators.
+            </p>
+        </div>
+        
+        <div class="features-grid scroll-animate stagger-children">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/security-icon.png" alt="Security" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3>Advanced Security</h3>
+                <p>Military-grade encryption and multi-layer security protocols protect your assets.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/speed-icon.png" alt="Speed" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>Process thousands of transactions per second with minimal latency.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/interop-icon.png" alt="Interoperability" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3>Interoperability</h3>
+                <p>Seamlessly connect with existing blockchain networks and protocols.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/developer-icon.png" alt="Developer Tools" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3>Developer Friendly</h3>
+                <p>Comprehensive APIs, SDKs, and documentation for rapid development.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/governance-icon.png" alt="Governance" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3>Democratic Governance</h3>
+                <p>Participate in decision-making through transparent voting mechanisms.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/eco-icon.png" alt="Eco-Friendly" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3>Eco-Friendly</h3>
+                <p>Carbon-neutral operations with minimal environmental impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section class="vision-section">
+        <div class="section-header scroll-animate fade-in">
+            <span class="section-badge">Benefits</span>
+            <h2 class="section-title">Why Join Us?</h2>
+            <p class="section-description">
+                Be part of a revolutionary movement shaping the future of digital infrastructure.
+            </p>
+        </div>
+        
+        <div class="benefits-grid scroll-animate stagger-children">
+            <div class="benefit-card">
+                <div class="benefit-icon-wrapper">
+                    <div class="benefit-icon">
+                        <img src="images/rewards-icon.png" alt="Rewards" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="benefit-number">01</div>
+                </div>
+                <h3>Earn Rewards</h3>
+                <p>Get rewarded for your contributions through staking, governance participation, and community engagement.</p>
+                <span class="benefit-tag">💰 Passive Income</span>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon-wrapper">
+                    <div class="benefit-icon">
+                        <img src="images/community-power-icon.png" alt="Community" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="benefit-number">02</div>
+                </div>
+                <h3>Shape the Future</h3>
+                <p>Have a real voice in the direction of the ecosystem through democratic voting and proposals.</p>
+                <span class="benefit-tag">🗳️ Your Voice Matters</span>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon-wrapper">
+                    <div class="benefit-icon">
+                        <img src="images/growth-icon.png" alt="Growth" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="benefit-number">03</div>
+                </div>
+                <h3>Grow Together</h3>
+                <p>Access exclusive resources, educational content, and networking opportunities within our vibrant community.</p>
+                <span class="benefit-tag">📈 Continuous Learning</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section" id="community">
+        <!-- Background Elements -->
+        <div class="community-bg-orb community-orb-1"></div>
+        <div class="community-bg-orb community-orb-2"></div>
+        <div class="community-bg-orb community-orb-3"></div>
+        <div class="community-grid-lines"></div>
+        <div class="community-floating-dots" id="communityFloatingDots"></div>
+        
+        <div class="section-header scroll-animate fade-in">
+            <span class="section-badge">Connect</span>
+            <h2 class="section-title">Join Our Community</h2>
+            <p class="section-description">
+                Connect with thousands of like-minded innovators, developers, and enthusiasts.
+            </p>
+        </div>
+        
+        <div class="community-grid scroll-animate stagger-children">
+            <div class="community-card">
+                <div class="community-icon">
+                    <img src="images/discord-icon.png" alt="Discord" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3 class="community-title">Discord</h3>
+                <p class="community-description">Join our active Discord server for real-time discussions and support.</p>
+                <a href="#" class="community-btn">Join Discord</a>
+            </div>
+            
+            <div class="community-card">
+                <div class="community-icon">
+                    <img src="images/telegram-icon.png" alt="Telegram" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3 class="community-title">Telegram</h3>
+                <p class="community-description">Stay updated with announcements and community discussions.</p>
+                <a href="#" class="community-btn">Join Telegram</a>
+            </div>
+            
+            <div class="community-card">
+                <div class="community-icon">
+                    <img src="images/twitter-icon.png" alt="Twitter" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3 class="community-title">Twitter</h3>
+                <p class="community-description">Follow us for latest updates, news, and ecosystem developments.</p>
+                <a href="#" class="community-btn">Follow on Twitter</a>
+            </div>
+            
+            <div class="community-card">
+                <div class="community-icon">
+                    <img src="images/github-icon.png" alt="GitHub" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h3 class="community-title">GitHub</h3>
+                <p class="community-description">Explore our open-source projects and contribute to development.</p>
+                <a href="#" class="community-btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="vision-section">
+        <div class="join-cta-wrapper">
+            <div class="join-cta-container">
+                <span class="join-cta-sparkle sparkle-1">✨</span>
+                <span class="join-cta-sparkle sparkle-2">⭐</span>
+                <span class="join-cta-sparkle sparkle-3">💫</span>
+                <span class="join-cta-sparkle sparkle-4">🌟</span>
+                
+                <span class="join-cta-label">Ready to Start?</span>
+                <h2 class="join-cta-title">Join the Revolution Today</h2>
+                <p class="join-cta-description">
+                    Be part of the future. Connect with innovators, build groundbreaking applications, 
+                    and help shape the next generation of digital infrastructure.
+                </p>
+                
+                <div class="join-cta-stats">
+                    <div class="join-stat">
+                        <div class="join-stat-number">
+                            <img src="images/users-stat-icon.png" alt="Users" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <p class="join-stat-label">Active Users</p>
+                    </div>
+                    <div class="join-stat">
+                        <div class="join-stat-number">
+                            <img src="images/projects-stat-icon.png" alt="Projects" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <p class="join-stat-label">Projects Built</p>
+                    </div>
+                    <div class="join-stat">
+                        <div class="join-stat-number">
+                            <img src="images/countries-stat-icon.png" alt="Countries" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <p class="join-stat-label">Countries</p>
+                    </div>
+                </div>
+                
+                <a href="#" class="join-cta-button">
+                    <span>Get Started Now</span>
+                    <span class="button-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">DotEco</div>
+                    <p>Building the future of decentralized digital infrastructure. Join us in creating a sustainable, transparent ecosystem.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💬</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">💻</a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#ecosystem">Ecosystem</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Developer API</a></li>
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px; font-size: 0.95rem;">Stay updated with latest news</p>
+                    <div class="footer-newsletter">
+                        <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email">
+                        <button id="newsletterBtn" class="newsletter-btn">Subscribe</button>
+                        <div id="newsletterMessage" class="newsletter-message"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 DotEco. All rights reserved.</p>
+                <ul class="footer-links-bottom">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
